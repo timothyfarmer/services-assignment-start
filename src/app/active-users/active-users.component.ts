@@ -1,12 +1,12 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {UserService} from '../shared/user.service';
-import {CounterService} from '../shared/counter.service';
+import { Component, OnInit } from '@angular/core';
+import { UserService } from '../shared/user.service';
+import { CounterService } from '../shared/counter.service';
 
 @Component({
   selector: 'app-active-users',
   templateUrl: './active-users.component.html',
   styleUrls: ['./active-users.component.css'],
-  providers: [CounterService]
+  providers: [ CounterService ]
 })
 export class ActiveUsersComponent implements  OnInit {
   users = [];

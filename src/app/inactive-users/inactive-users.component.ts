@@ -1,12 +1,12 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {UserService} from '../shared/user.service';
-import {CounterService} from '../shared/counter.service';
+import { Component, OnInit } from '@angular/core';
+import { UserService } from '../shared/user.service';
+import { CounterService } from '../shared/counter.service';
 
 @Component({
   selector: 'app-inactive-users',
   templateUrl: './inactive-users.component.html',
   styleUrls: ['./inactive-users.component.css'],
-  providers: [CounterService]
+  providers: [ CounterService ]
 })
 export class InactiveUsersComponent implements OnInit {
   users = [];
